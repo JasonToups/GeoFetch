@@ -1,4 +1,4 @@
-# GeoFetch
+# GeoTask
 
 A todo app with geolocation for assigning locations to todo lists.
 
