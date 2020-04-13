@@ -1,8 +1,8 @@
-# GeoFetch
+# GeoTask
 
 A todo app with geolocation for assigning locations to todo lists.
 
-_Link to project on Heroku_
+[Link to project on Heroku] (https://geo-task-app.herokuapp.com/)
 
 [Link to Storyboard](https://github.com/amazingshellyyy/GeoFetch/blob/submaster/Design/GeoTask%20Storyboard.pdf)
 
