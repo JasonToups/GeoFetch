@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 4000;
 const ctrl = require('./controller');
 const mw = require('./middleware');
 const db = require('./models');
+require('dotenv').config();
 
 /* Middleware */
 app.use(express.static(`${__dirname}/public`));
@@ -18,6 +19,12 @@ app.get('/', (req, res) => {
     root: __dirname
   });
 });
+
+app.get('/lists', (req, res)=> {
+  res.sendFile('/views/lists.html', {
+    root: __dirname
+  });
+})
 app.get('/profile', (req, res) => {
   res.sendFile('/views/profile.html', {
     root: __dirname

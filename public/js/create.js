@@ -1,4 +1,4 @@
-const BASE = 'http://localhost:4000';
+
 const token = localStorage.getItem('jwt');
 
 // const $addBtn = $('#addItem');
@@ -89,7 +89,7 @@ $form.on('submit', () => {
   //fetch list
   if (formIsValid) {
     //send data to server
-    fetch(`${BASE}/api/v1/list/create`, {
+    fetch(`/api/v1/list/create`, {
       method: 'POST',
       headers: {
         'content-Type': 'application/json',
@@ -101,17 +101,20 @@ $form.on('submit', () => {
       .then((data) => {
 
         const listId = data.createdToDoList._id;
-        let url = new URL(`${BASE}/detail`);
-        let query_string = url.search;
-        let search_params = new URLSearchParams(query_string);
-        search_params.append('id', `${listId}`);
-        url.search = search_params.toString();
-        let new_url = url.toString();
-
-        window.location = new_url;
+        
+        // let url = new URL(`${window.location.host}/detail?`);
+        // console.log(url);
+        // let query_string = url.search;
+        // let search_params = new URLSearchParams(query_string);
+        // search_params.append('id', `${listId}`);
+        // url.search = search_params.toString();
+        // let new_url = url.toString();
+        console.log(data);
+        console.log(`${window.location.host}/detail?id=${listId}`);
+        window.location.replace(`${window.location.origin}/detail?id=${listId}`);
 
       })
-      .catch(err => console.log(err))
+      .catch(err => console.log('err',err))
 
   }
 

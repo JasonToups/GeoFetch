@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-const DB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/geofetch';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/geofetch' ;
 
 
-mongoose.connect(DB_URI, {
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useFindAndModify: false,
   useCreateIndex: true,
