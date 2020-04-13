@@ -1,6 +1,6 @@
 const token = localStorage.getItem('jwt');
 
-checkLogin= (token)=>{
+checkLogin = (token) => {
   $('.ml-auto li').remove();
   if (token) {
     $('.ml-auto').append(`<li class="nav-item">
@@ -10,7 +10,7 @@ checkLogin= (token)=>{
   </li>`)
   } else {
     $('.ml-auto').append(`<li class="nav-item">
-    <a class="nav-link" href="/login">log in</a>
+    <a class="nav-link" href="/login">Log in</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="/signup">Sign up</a>
@@ -19,14 +19,14 @@ checkLogin= (token)=>{
 }
 checkLogin(token);
 
-$('#logout').on('click',function(e) {
+$('#logout').on('click', function (e) {
   e.preventDefault();
   localStorage.removeItem('jwt');
   checkLogin(token);
   window.location = '/';
 })
 
-$('#start').on('click',function(e) {
+$('#start').on('click', function (e) {
   e.preventDefault();
   window.location = '/signup';
 })
