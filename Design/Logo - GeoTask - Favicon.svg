@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="271px" height="271px" viewBox="0 0 271 271" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Logo - GeoTask - Favicon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="32.3476848%" y1="6.83997351%" x2="50%" y2="99.7782939%" id="linearGradient-1">
+            <stop stop-color="#7CC9EE" offset="0%"></stop>
+            <stop stop-color="#492EF4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Logo---GeoTask---Favicon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo---GeoTask" transform="translate(25.000000, 0.000000)">
+            <g id="GeoTask-logo" transform="translate(0.690141, 0.000000)">
+                <path d="M110.5,271 C184.166667,199.987251 221,144.697021 221,105.12931 C221,45.777744 171.527465,0 110.5,0 C49.4725351,0 0,45.777744 0,105.12931 C0,144.697021 36.8333333,199.987251 110.5,271 Z" id="pointer---red" fill="url(#linearGradient-1)"></path>
+                <path d="M73.6679039,111.058943 C68.2865623,104.990594 58.9763155,104.408591 52.8728857,109.759002 C46.769456,115.109412 46.1840878,124.366145 51.5654294,130.434493 L106.363357,192.228175 L177.887857,88.8708262 C182.50013,82.205804 180.804813,73.0852405 174.10126,68.4994773 C167.397707,63.9137142 158.224417,65.5992867 153.612143,72.2643089 L103.492199,144.690744 L73.6679039,111.058943 Z" id="Line" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
